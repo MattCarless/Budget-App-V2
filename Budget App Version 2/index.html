@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Savings App</title>
-</head>
-<body>
-    
-</body>
+  </head>
+
+  <h1 class="align">Saving App</h1>
+
+  <div class="align">
+<p>Monthly Wage</p>
+<input type="number" id="user-wage-input" placeholder="Wage">
+
+</div>
+
+<div class="align">
+<p>Monthly Expenses</p>
+<input type="number" id="user-expenses-input" placeholder="Expenses">
+
+
+</div>
+
+<div class="align">
+    <button id="calculate-savings-button">Calculate Savings</button>
+    <p id='user-input-data-sentence'></p>
+</div>
+
+<div class="align">
+    <h3 id="display-total-user-savings"></h3>
+</div>
+
+<div class="align">
+    <p>Calculate savings over 1, 6 or 12 months</p>
+    <select id="time-period-menu">
+    <option value="1">One Month</option>
+    <option value="6">Six Months</option>
+    <option value="12">Twelve Months</option>
+    </select>
+</div>
+
+<div class="align">
+  <button type="button" id="reset-button-html">Reset App</button>
+</div>
+  <body>
+    <script src="script.js"></script>
+  </body>
 </html>
